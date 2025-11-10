@@ -220,3 +220,13 @@ void copy_file(const char *source_path, const char *dest_path) {
     fclose(src);
     fclose(dst);
 }
+/*
+CHANGE BACKUPD TO PROCESSMANAGEMENTVERSION.C
+~/Desktop/backupd.c
+gcc -o ~/Desktop/backupd ~/Desktop/backupd.c -pthread
+~/Desktop/backupd &
+echo "My first backup test" > ~/Desktop/source/test.txt
+cat ~/Desktop/backupd.log
+ls ~/Desktop/backup
+*/
+
